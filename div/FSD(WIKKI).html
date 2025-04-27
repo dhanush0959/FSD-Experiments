@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Hopper - Variant</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            background-color: #d0e8f2;
+            text-align: center;
+            padding-top: 40px;
+            font-family: 'Verdana', sans-serif;
+            color: #2c3e50;
+        }
+        img {
+            height: 350px;
+            margin-left: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(44, 62, 80, 0.3);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: #34495e;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+            text-shadow: none;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 650px;
+            margin: 20px auto;
+            text-align: justify;
+            text-indent: 2em;
+            background-color: #f0f8ff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(52, 73, 94, 0.1);
+            color: #2c3e50;
+        }
+        .butt {
+            background-color: #2980b9;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-family: 'Verdana', sans-serif;
+            margin-top: 20px;
+        }
+        .butt:hover {
+            background-color: #1c5980;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://en.wikipedia.org/wiki/Grace_Hopper">
+        <img src="./img/Grace Hopper.jpg" alt="Grace Hopper"/>
+    </a>
+    <h1>GRACE HOPPER</h1>
+    <p>
+        Grace Hopper was an American computer scientist and United States Navy rear admiral. She was a pioneer in computer programming who developed the first compiler for a computer programming language and popularized the idea of machine-independent programming languages, which led to the development of COBOL, one of the earliest high-level programming languages. Hopper's contributions to computer science and her advocacy for programming education have left a lasting legacy in the field.
+    </p>
+    <button class="butt" onclick="getback()">Home</button>
+    <script>
+        function getback() {
+            window.location.href = '../index.html';
+        }
+    </script>
+</body>
+</html>

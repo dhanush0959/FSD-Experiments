@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Graceful Game: Dive into Tennis!</title>
+    <style>
+        body {
+            background-color: #f4f1de; 
+            color: #3d405b; 
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            background-image: url('tennis_court.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(61, 64, 91, 0.85);
+            padding: 35px 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 5px 8px rgba(61, 64, 91, 0.6);
+            margin-bottom: 35px;
+            font-family: 'Georgia', serif;
+            color: #f2cc8f;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            color: #f2cc8f;
+            text-shadow: 2px 2px 5px rgba(61, 64, 91, 0.7);
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+
+        .home-button {
+            background-color: #3d405b;
+            color: #f4f1de;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+            margin-bottom: 35px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-weight: 700;
+        }
+
+        .home-button:hover {
+            background-color: #6b705c;
+            transform: scale(1.07);
+        }
+
+        .tennis-section {
+            background-color: rgba(244, 241, 222, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(61, 64, 91, 0.5);
+            margin: 35px;
+            padding: 35px;
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .tennis-image-container {
+            flex: 1 1 420px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(61, 64, 91, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .tennis-image-container:hover {
+            transform: scale(1.06);
+        }
+
+        .tennis-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .tennis-info {
+            flex: 2 1 460px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-paragraph {
+            font-size: 1.2em;
+            line-height: 1.9;
+            text-align: justify;
+            text-indent: 1.8em;
+            margin-bottom: 25px;
+            color: #3d405b;
+        }
+
+        .learn-more-link {
+            color: #6b705c;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease, text-shadow 0.2s ease-in-out;
+        }
+
+        .learn-more-link:hover {
+            color: #a5a58d;
+            text-shadow: 1px 1px 3px rgba(61, 64, 91, 0.4);
+        }
+
+        h2 {
+            color: #6b705c;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-shadow: 1px 1px 3px rgba(61, 64, 91, 0.3);
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Graceful Game: Dive into Tennis!</h1>
+    </header>
+
+    <button class="home-button" onclick="goToHome()">Return to the Court</button>
+
+    <section class="tennis-section">
+        <div class="tennis-image-container">
+            <a href="https://en.wikipedia.org/wiki/Tennis" target="_blank">
+                <img src="./img/Tennis.jpeg" alt="Tennis Court" class="tennis-image" />
+            </a>
+        </div>
+        <div class="tennis-info">
+            <h2>Experience the Elegance of Tennis</h2>
+            <p class="info-paragraph">
+                Tennis is a sport that combines agility, strategy, and precision. Played on a rectangular court, it challenges players to outmaneuver their opponents with powerful serves, swift volleys, and tactical plays. Originating in the late 19th century, tennis has grown into a global sport with iconic tournaments like Wimbledon and the US Open.
+            </p>
+            <p class="info-paragraph">
+                The game is played in singles or doubles formats, with players aiming to score points by hitting the ball over the net into the opponent's court without it being returned. The sport demands physical endurance, mental toughness, and excellent hand-eye coordination.
+            </p>
+            <p class="info-paragraph">
+                Tennis has produced legendary athletes such as Roger Federer, Serena Williams, and Rafael Nadal, who have captivated audiences worldwide with their skill and sportsmanship. The sport continues to inspire millions, promoting fitness, discipline, and a competitive spirit.
+            </p>
+            <p class="info-paragraph">
+                Whether played recreationally or professionally, tennis offers a thrilling blend of athleticism and strategy, making it a beloved sport across the globe. <a href="https://en.wikipedia.org/wiki/Tennis" target="_blank" class="learn-more-link">Explore the World of Tennis on Wikipedia</a>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function goToHome() {
+            window.location.href = '../index.html';
+        }
+    </script>
+</body>
+</html>

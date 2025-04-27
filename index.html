@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>FSD EXPERIMENTS</title>
+    <style>
+        body {
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            background-color: #e0f7fa; 
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #004d40;
+            color: #ffcc80; 
+            padding: 20px;
+            font-size: xx-large;
+            width: 65%;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 15px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-style: italic;
+            box-shadow: 0 0 15px #004d40;
+        }
+        main {
+            width: 55%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            top: 17%;
+            right: 12%;
+        }
+        .m1 {
+            background-color: #ffffffcc;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 77, 64, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #004d40;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 2px solid #004d40;
+        }
+        .m1:hover {
+            transform: translateX(50px);
+            box-shadow: 0 12px 24px rgba(0, 77, 64, 0.5);
+        }
+        .m1 h1 {
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-family: 'Georgia', serif;
+        }
+        .butt {
+            background-color: #00796b;
+            color: #fff3e0;
+            border: 2px solid #004d40;
+            padding: 12px 25px;
+            font-size: 17px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .butt:hover {
+            background-color: #004d40;
+            transform: scale(1.1);
+            transition: background-color 0.4s ease, transform 0.4s ease;
+        }
+        .logo {
+            margin-right: 20px;
+            width: 60px;
+            height: 60px;
+        }
+        .student-profile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #004d40cc;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 77, 64, 0.5);
+            position: absolute;
+            top: 19%;
+            left: 5%;
+            color: #ffcc80;
+            font-family: 'Georgia', serif;
+            flex-direction: column;
+            width: 20%;
+            gap: 10px;
+        }
+        .student-profile h2 {
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        .student-profile p {
+            margin: 0;
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>FULL STACK EXPERIMENT</header>
+    <main class="content">
+        <div class="m1">
+            <h1>Wikipedia</h1>
+            <button onclick="openFile('div/FSD(WIKKI).html')" class="butt"> Explore </button>   
+        </div>
+        <div class="m1">
+            <h1>Sports</h1>
+            <button onclick="openFile('div/FSD(SP).html')" class="butt"> Discover </button>
+        </div>
+        <div class="m1">
+            <h1>Time Table</h1>
+            <button onclick="openFile('div/FSD(TT).html')" class="butt"> View </button>
+        </div>
+        <div class="m1">
+            <h1>Registration Form</h1>
+            <button onclick="openFile('div/FSD(RF).html')" class="butt"> Sign Up </button>
+        </div>
+        <div class="m1">
+            <h1>Programming Languages</h1>
+            <button onclick="openFile('div/FSD(PP).html')" class="butt"> Learn More </button>
+        </div>
+    </main>
+    <div class="student-profile">
+        <div>
+            <h2>Student Profile</h2>
+            <p><strong>Name:</strong>   Venkata Danush Voleti </p>
+            <p><strong>Roll Number:</strong> 23L31A54D0</p>
+            <p><strong>Branch:</strong> AI&DS</p>
+            <p><strong>Section:</strong> B</p>
+        </div>
+    </div>
+    <script>
+        function openFile(path) {
+            window.location.href = path;
+        }
+    </script>
+</body>
+</html>

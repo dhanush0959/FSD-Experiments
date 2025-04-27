@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Programming Languages - Variant</title>
+    <script>
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === "visible" && sessionStorage.getItem("linkClicked")) {
+                const redirectPage = sessionStorage.getItem("linkClicked");
+                sessionStorage.removeItem("linkClicked");
+                alert("Test Time!");
+                window.location.href = redirectPage;
+            }
+        });
+  
+        function linkClicked(page) {
+            sessionStorage.setItem("linkClicked", page);
+        }
+    </script>
+
+    <style>
+        body{
+            background-color: #f0e6f7;
+            font-family: 'Tahoma', Geneva, sans-serif;
+            color: #4b0082; 
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            padding: 30px 0;
+            background-color: #7b68ee;
+            font-size: 2rem;
+            width: 60%;
+            margin: auto;
+            color: #fff;
+            text-align: center;
+            border-radius: 15px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            box-shadow: 0 0 15px rgba(123, 104, 238, 0.7);
+            font-family: 'Georgia', serif;
+        }
+        h1{
+            margin-top: 10%;
+            padding: 0;
+            text-align: center;
+            color: #4b0082;
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 2.7rem;
+            background-color: #e6e6fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(123, 104, 238, 0.5);
+        }
+        h3{
+            display: inline-block;
+            margin-right: 50px;
+        }
+        .info-cards {
+            margin-left: 18%;
+            width: 65%;
+            padding: 30px 0;
+            background: transparent;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+            background-color: #e6e6fa;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(123, 104, 238, 0.5);
+            flex: 1;
+            color: #4b0082;
+        }
+        .card:hover {
+            transform: scale(1.12);
+            box-shadow: 0 0 25px rgba(123, 104, 238, 0.8);
+        }
+        .cards  {
+            display: flex;
+            gap: 80px;
+        }
+        button{
+            display: flex;
+            flex-direction: column;
+            margin: 25px auto;
+            padding: 12px 28px;
+            background-color: #7b68ee;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(123, 104, 238, 0.7);
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 18px;
+            transition: transform 0.3s, background-color 0.4s;
+        }
+        button:hover {
+            transform: scale(1.15);
+            background-color: #6a5acd;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .lang-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #7b68ee;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(123, 104, 238, 0.7);
+            transition: transform 0.3s, background-color 0.4s;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .lang-button:hover {
+            transform: scale(1.15);
+            background-color: #6a5acd;
+        }
+    </style>
+</head>
+<body>
+    <header>Programming Languages</header>
+    <section class="info-cards">
+        <div class="container cards">
+            <div class="card">
+                <h3>Structure Oriented Programming Language</h3>
+                <p>"Structured programming is a programming paradigm that emphasizes organizing code into clear, logical structures using constructs like functions, loops, and conditionals, aiming for readability, modularity, and maintainability."</p>
+                <div class="button-container">
+                    <a href="https://www.geeksforgeeks.org/c-programming-language/" class="lang-button">C Programming</a>
+                    <a href="https://www.geeksforgeeks.org/java/" class="lang-button">Java</a>
+                    <a href="https://www.geeksforgeeks.org/c-plus-plus/" class="lang-button">C++</a>
+                    <a href="https://www.youtube.com/watch?v=fHKPQEVCX-s" class="lang-button">Python</a>
+                    <a href="https://www.geeksforgeeks.org/csharp-programming-language/" class="lang-button">C#</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-cards">
+        <div class="container cards">
+            <div class="card">
+                <h3>Scripting Language</h3>
+                <p>"A scripting language is a programming language designed for integrating and communicating with other programming languages, often used for automating tasks, manipulating data, and controlling software applications."</p>
+                <div class="button-container">
+                    <a href="https://www.geeksforgeeks.org/javascript/" class="lang-button">JavaScript</a>
+                    <a href="https://www.geeksforgeeks.org/html/" class="lang-button">HTML</a>
+                    <a href="https://www.geeksforgeeks.org/php/" class="lang-button">PHP</a>
+                    <a href="https://www.geeksforgeeks.org/r-programming-language/" class="lang-button">R</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <button onclick="window.location.href='../index.html'" class="butt">Home</button>
+</body>
+</html>
